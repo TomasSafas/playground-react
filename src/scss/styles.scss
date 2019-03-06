@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+/* ------------------------------------
+    Configuration
+------------------------------------ */
+
+@import
+'core/normalize',
+'core/colors',
+'core/variables',
+'core/functions',
+'core/fonts',
+'core/mixins';
+
+/* ------------------------------------
+    Base
+------------------------------------ */
+
+@import
+'core/base';
+
+/* ------------------------------------
+    Components
+------------------------------------ */
+
+@import
+'../components/Footer/footer',
+'../components/Header/header',
+'../components/MainContent/main-content',
+'../components/MainContent/Sections/page-section';
+
+/* ------------------------------------
+    Shame file
+------------------------------------ */
+
+@import
+'shame';
+
+/* ------------------------------------
+    Print file
+------------------------------------ */
+
+@import
+'print';

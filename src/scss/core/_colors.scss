@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+/* Descriptive Colors. Name that color: http://chir.ag/projects/name-that-color/
+   ========================================================================== */
+
+$color-white: #fff;
+$color-black: #000;
+
+$wild-sand: #f5f5f5;
+$chelsea-cucumber: #61d2b5;
+$dodger-blue: #329bfc;
+$dusty-gray: #9b9b9b;
+
+/* Functional Colors
+   ========================================================================== */
+
+// Color scheme
+
+// Common colors
+$color-brand: $dodger-blue;
+$color-text: $color-black;
+$color-bg: $color-white;
+$color-border: $wild-sand;
+
+// Buttons:
+$color-button-bg: $color-black;
+$color-button-hover: lighten($color-black, 15%);
+$color-button-active: darken($color-black, 15%);;
+$color-button-disabled: $dusty-gray;
+$color-button-text: $color-white;
+
+// Shadows:
+$color-shadow: rgba(0, 0, 0, .2);

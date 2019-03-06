@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+@mixin size($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin visually-hidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &--focusable {
+    &:focus,
+    &:active {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin reset-list-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin triangle($border-size, $color) {
+  border-bottom: $border-size solid $color;
+  border-left: $border-size solid transparent;
+  border-right: $border-size solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+}
+
+@mixin reset-button-style {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button-color {
+  background-color: $color-button-bg;
+  color: $color-button-text;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $color-button-active;
+  }
+
+  &:disabled {
+    background-color: $color-button-disabled;
+  }
+}

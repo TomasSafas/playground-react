@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Page Section
+   ========================================================================== */
+
+.page-section {
+  padding: 30px;
+  width: 33.33%;
+
+  &:nth-of-type(odd) {
+    background-color: $chelsea-cucumber;
+  }
+
+  &:nth-of-type(even) {
+    background-color: lighten($chelsea-cucumber, 20%);
+  }
+}

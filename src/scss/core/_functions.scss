@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Functions
+   ========================================================================== */
+
+// Get z-index values from $z-indexes list.
+
+// Order matters - from highest to lowest
+$z-indexes: (
+);
+
+@function z-index($name) {
+  $_starts-from: 10; // Safe, to prevent conflicts with plugins or local z-index values
+
+  @return (length($z-indexes) - index($z-indexes, $name)) + ($_starts-from - 1);
+}
+
+// Rem units
+// font-size: rem-calc(16px);
+@function rem-calc($size) {
+  $rem-size: $size / 16px;
+  @return #{$rem-size}rem;
+}
